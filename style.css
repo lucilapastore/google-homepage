@@ -6,13 +6,13 @@ body {
     background-color: #FFF;
     color: #222;
 }
-* {
-    border: #666053 solid 1px;
-}
 
 /*Header*/
+
 header {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 header a, header img, header button {
@@ -23,7 +23,6 @@ header a, header img, header button {
 
 header img {
     position: relative;
-    top: 20px;
 }
 
 header button {
@@ -35,19 +34,27 @@ header button {
     border: #4285f4 solid 1px;
     border-radius: 2px;
     padding: 0 12px;
+    margin-right: 30px;
 }
 
 /*Main section*/
-section {
-    display: block;
-    text-align: -webkit-center;
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 525px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.google-logo {
+    display: flex;
+    justify-content: center;
 }
 .google-logo img {
     width: 550px;
     height: 220px;
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
+    margin-top: 5%;
 }
 .search-bar {
     display: flex;
@@ -77,6 +84,8 @@ section {
 
 .buttons {
     padding-top: 18px;
+    display: flex;
+    justify-content: center;
 }
 .button2 {
     height: 36px;
@@ -93,11 +102,23 @@ section {
     padding: 0 16px;
 }
 
-/*Footer*/
+.language {
+    display: flex;
+    justify-content: center;
+}
 
+/*Footer*/
+/*
+.footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+*/
 .country {
     position: relative;
-    top: 210px;
     color: #666053;
     background-color: #e3e2e1;
     border-top: 1px solid rgba(0, 0, 0, 0.54);
@@ -124,12 +145,12 @@ section {
     text-decoration: none;
     color: #666053;
     font-size: smaller;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .footer-right {
-    display: relative;
-    float: right;
+    position: relative;
+    left: 575px;
 }
 
 
