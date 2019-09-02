@@ -12,5 +12,5 @@ https://www.google.com
 HTML5 <br> 
 CSS3
 
-#Author
+# Author
 Lucila Pastore https://github.com/lucilapastore
